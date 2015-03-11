@@ -34,13 +34,13 @@ class WineStaging < Formula
   depends_on 'libgsm' => :optional
 
   resource 'gecko' do
-    url 'https://downloads.sourceforge.net/wine/wine_gecko-2.34-x86.msi', :using => :nounzip
-    sha256 '956c26bf302b1864f4d7cb6caee4fc83d4c1281157731761af6395b876e29ca7'
+    url 'https://downloads.sourceforge.net/wine/wine_gecko-2.36-x86.msi', :using => :nounzip
+    sha256 'afa457ce8f9885225b6e549dd6f154713ce15bf063c23e38c1327d2f869e128a'
   end
 
   resource 'mono' do
-    url 'https://downloads.sourceforge.net/wine/wine-mono-4.5.4.msi', :using => :nounzip
-    sha256 '20bced7fee01f25279edf07670c5033d25c2c9834a839e7a20410ce1c611d6f2'
+    url 'https://downloads.sourceforge.net/wine/wine-mono-4.5.6.msi', :using => :nounzip
+    sha256 'ac681f737f83742d786706529eb85f4bc8d6bdddd8dcdfa9e2e336b71973bc25'
   end
 
   fails_with :llvm do
