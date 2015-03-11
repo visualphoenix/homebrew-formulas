@@ -5,14 +5,13 @@ require 'formula'
 #  - http://wiki.winehq.org/Gecko
 #  - http://wiki.winehq.org/Mono
 class WineStaging < Formula
-  homepage 'https://www.winehq.org/'
+  homepage 'https://www.wine-staging.com/'
 
   head do
-    url "https://github.com/wine-compholio/wine-staging/archive/v1.7.38.tar.gz"
-    sha256 "b77fc0913c972c0cb2b3fcc3d7627a838ba05cb876396cab526f518564f2f936"
-
+    url "https://github.com/wine-compholio/wine-patched.git", :branch => "wine-staging-1.7.38"
     depends_on "samba" => :optional
-    depends_on "gnutls"
+    option "with-win64",
+           "Build with win64 emulator (won't run 32-bit binaries.)"
   end
 
   # note that all wine dependencies should declare a --universal option in their formula,
