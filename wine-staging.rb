@@ -9,7 +9,7 @@ class WineStaging < Formula
 
   head do
     url "https://github.com/wine-compholio/wine-staging/archive/v1.7.38.tar.gz"
-    sha256 "981ee93e7db6b2b8d1ee16999cdff915a9411b1566539edc56137f9cd4d36bc0"
+    sha256 "b77fc0913c972c0cb2b3fcc3d7627a838ba05cb876396cab526f518564f2f936"
 
     depends_on "samba" => :optional
     depends_on "gnutls"
